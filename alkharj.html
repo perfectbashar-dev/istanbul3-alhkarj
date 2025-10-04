@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> اسطنبول للأزياء | الخرج</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #001f3f 0%, #003366 100%);
+            color: #fff;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+        }
+        
+        .profile {
+            margin-bottom: 25px;
+        }
+        
+        .profile-img-container {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            border: 4px solid white;
+            margin: 0 auto 15px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(255, 255, 255, 0.1);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        .profile-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .profile-name {
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+            margin-bottom: 5px;
+        }
+        
+        .profile-username {
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 18px;
+            margin-bottom: 15px;
+            direction: ltr;
+        }
+        
+        .description {
+            background: #001a33;
+            padding: 15px;
+            border-radius: 25px;
+            margin-bottom: 25px;
+            font-size: 16px;
+            line-height: 1.6;
+            color: rgba(255, 255, 255, 0.9);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+        }
+        
+        .links-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        
+        .link-button {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 16px 20px;
+            background: #001a33;
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: 600;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(5px);
+        }
+        
+        .link-text {
+            flex: 1;
+            text-align: center;
+        }
+        
+        .link-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+            background: #00264d;
+            border-color: rgba(255, 255, 255, 0.4);
+        }
+        
+        .link-icon-container {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            order: 2;
+        }
+        
+        .link-icon {
+            font-size: 24px;
+        }
+        
+        .social-icon {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+        
+        .footer {
+            margin-top: 30px;
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 14px;
+            text-align: center;
+        }
+        
+        .address {
+            background: #001a33;
+            padding: 12px;
+            border-radius: 20px;
+            margin-top: 10px;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+        
+        .linktree-brand {
+            margin-top: 20px;
+            font-size: 12px;
+            color: rgba(255, 255, 255, 0.6);
+        }
+        
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 15px;
+        }
+        
+        .footer-link {
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+            font-size: 12px;
+            transition: color 0.3s;
+        }
+        
+        .footer-link:hover {
+            color: white;
+            text-decoration: underline;
+        }
+        
+        .snapchat-button .link-icon-container {
+            background: rgba(255, 252, 0, 0.2);
+        }
+        
+        .tiktok-button .link-icon-container {
+            background: rgba(0, 0, 0, 0.2);
+        }
+        
+        .website-button .link-icon-container {
+            background: rgba(0, 119, 181, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- قسم البروفايل -->
+        <div class="profile">
+            <div class="profile-img-container">
+                <img src="https://i.ibb.co/XxJFhjh5/e447c18e-f933-4e88-8814-c069e4ee447b-IMG-5062.jpg  " alt="مركز اسطنبول التجاري | الخرج" class="profile-img">
+            </div>
+            <h1 class="profile-name">مركز اسطنبول للأزياء | الخرج</h1>
+            <p class="profile-username">@istanbulsa3_</p>
+        </div>
+        
+        <!-- قسم الوصف -->
+        <div class="description">
+            مركز اسطنبول للأزياء التجاري يوفر لكم أحدث الأزياء والمستلزمات بجودة عالية وأسعار مناسبة
+        </div>
+        
+        <!-- قسم الروابط -->
+        <div class="links-container">
+            <a href="https://snapchat.com/add/istanbulsa3" class="link-button snapchat-button">
+                <span class="link-text"> on snapchat اسطنبول للازياء | الخرج </span>
+                <div class="link-icon-container">
+                    <!-- ضع رابط صورة السناب شات هنا -->
+                    <img src="https://i.ibb.co/B53SyYjd/051b4760-5804-40b2-9439-e0f65cc39ed6-square.jpg" alt="سناب شات" class="social-icon">
+                </div>
+            </a>
+            
+            <a href="https://tiktok.com/@istanbulsa3_" class="link-button tiktok-button">
+                <span class="link-text">Log in |TikTok</span>
+                <div class="link-icon-container">
+                    <!-- ضع رابط صورة التيك توك هنا -->
+                    <img src="https://i.ibb.co/pqHf2Hq/65a9a4d1-10fc-4009-9621-9c308ffa1207-tiktok.jpg " alt="تيك توك" class="social-icon">
+                </div>
+            </a>
+            
+            <a href="https://www.google.com/search?sca_esv=448564d09d36197f&rlz=1CDGOYI_enSA1104SA1104&hl=ar&sxsrf=AE3TifNULzNn3dJV30z0YaBDLug3fK_kXQ:1759559749126&kgmid=/g/11tc1ly8n5&q=%D9%85%D8%B1%D9%83%D8%B2+%D8%A7%D8%B3%D8%B7%D9%86%D8%A8%D9%88%D9%84+%D8%A7%D9%84%D8%AA%D8%AC%D8%A7%D8%B1%D9%8A+%D8%A7%D9%84%D8%AE%D8%B1%D8%AC&shndl=30&source=sh/x/loc/act/m1/3&kgs=bf80ed701731bd20&shem=shrtsdl&utm_source=shrtsdl,sh/x/loc/act/m1/3#ebo=0" class="link-button website-button">
+                <span class="link-text">  اسطنبول للأزياء | الخرج</span>
+                <div class="link-icon-container">
+                    <!-- ضع رابط أيقونة الموقع هنا -->
+                    <img src="https://i.ibb.co/ZzHYfRkk/IMG.jpg" alt="موقع إلكتروني" class="social-icon">
+                </div>
+            </a>
+        </div>
+        
+        <!-- الفوتر -->
+        <div class="footer">
+            <div class="address">
+                <p>نحن نقدم أحدث صيحات الموضة بأسعار مناسبة للجميع</p>
+                <p>للاستفسارات: info@istanbulsa3.com</p>
+            </div>
+            <div class="footer-links">
+                <a href="#" class="footer-link">Cookie Preferences</a>
+                <a href="#" class="footer-link">Report</a>
+                <a href="#" class="footer-link">Privacy</a>
+            </div>
+            <div class="linktree-brand">
+                &copy; 2023 مركز اسطنبول التجاري | الخرج. جميع الحقوق محفوظة.
+            </div>
+        </div>
+    </div>
+</body>
+</html>
